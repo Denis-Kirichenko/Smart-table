@@ -1,0 +1,3 @@
+<input [(colorPicker)]="colorValue" (colorPickerChange)="updateValue(colorValue)" #name class="form-control"
+  [name]="cell.getId()" [ngStyle]="{'background':colorValue, 'width':'100%'}" [cpDisabled]='!cell.isEditable()'
+  [cpDisableInput]='!cell.isEditable()' [cpOKButton]="true" />

@@ -1,0 +1,8 @@
+<input type="text" [ngModel]="this.getPlainText(editorText)" (click)="openWindow()" style="height: 20px; width: 100%;">
+
+
+<nb-layout>
+  <ng-template #contentTemplate let-data>
+    <ckeditor [(ngModel)]="editorText" [editor]="editor"></ckeditor>
+  </ng-template>
+</nb-layout>
